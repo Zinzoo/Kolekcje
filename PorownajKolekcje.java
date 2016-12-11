@@ -2,8 +2,9 @@
 	 *  Program demonstrujacy dzialanie kolekcji
 	 *  HashSet, TreeSet, Vector, ArrayList, LinkedList.
 	 *
-	 *  Autor: Miko³aj Brukiewicz
-	 *   Data: 10 grudzieñ 2016 r.
+	 * Autor: Miko³aj Brukiewicz
+	 * Indeks: 225954
+	 * Data: 10.12.2016
 	 */
 
 import java.awt.Dimension;
@@ -140,8 +141,8 @@ public class PorownajKolekcje extends JFrame implements ActionListener {
 			void refresh(){
 		    	model.setRowCount(0);
 				String[] wartosc = kolekcja.toArray(new String[0]);
-				for(int x=0; x<kolekcja.size(); x++){
-					String[] wiersz = {wartosc[x]};
+				for(String x : wartosc){
+					String[] wiersz = {x};
 					model.addRow(wiersz);
 		    	}
 			}
